@@ -1,0 +1,219 @@
+/* =============================================
+   ImpulsoDigital – Hoja de estilos principal
+   ============================================= */
+ 
+/* ---------- VARIABLES DE COLOR ---------- */
+:root {
+  --azul-principal: #1E3A8A;
+  --azul-oscuro:    #162d6e;
+  --naranja:        #F97316;
+  --naranja-hover:  #ea6a0a;
+  --gris-claro:     #F9FAFB;
+  --texto-oscuro:   #1F2937;
+}
+ 
+/* ---------- BASE ---------- */
+* {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  background-color: var(--gris-claro);
+  color: var(--texto-oscuro);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+ 
+h1, h2, h3, h4, h5 {
+  color: var(--azul-principal);
+}
+ 
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background-color: var(--azul-principal) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+ 
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+ 
+.navbar-brand img {
+  border-radius: 8px;
+}
+ 
+.nav-link {
+  color: #E5E7EB !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  border-radius: 6px;
+  padding: 6px 12px !important;
+}
+ 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--naranja) !important;
+}
+ 
+/* Botón de contacto en navbar */
+.btn-contacto {
+  border: 1.5px solid var(--naranja) !important;
+  color: var(--naranja) !important;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+ 
+.btn-contacto:hover {
+  background-color: var(--naranja) !important;
+  color: #fff !important;
+}
+ 
+/* ---------- CARRUSEL ---------- */
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.75);
+}
+ 
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 28px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  bottom: 40px;
+}
+ 
+.carousel-caption h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+ 
+.carousel-caption p {
+  color: #e5e7eb;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+ 
+/* Botón naranja en carrusel */
+.btn-naranja {
+  background-color: var(--naranja);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+ 
+.btn-naranja:hover {
+  background-color: var(--naranja-hover);
+  color: #fff;
+}
+ 
+/* ---------- SECCIÓN EMPRENDEDORES ---------- */
+.icono-card {
+  width: 60px;
+  height: 60px;
+  background-color: #EFF6FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--azul-principal);
+}
+ 
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+ 
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+ 
+/* ---------- SECCIÓN SERVICIOS ---------- */
+.card-servicio {
+  background-color: #ffffff;
+  border: 1.5px solid #E5E7EB;
+  border-radius: 12px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+ 
+.card-servicio:hover {
+  border-color: var(--naranja);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.12);
+}
+ 
+.text-naranja {
+  color: var(--naranja) !important;
+}
+ 
+/* ---------- FORMULARIO DE CONTACTO ---------- */
+.form-control {
+  border-radius: 8px;
+  border: 1.5px solid #D1D5DB;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+ 
+.form-control:focus {
+  border-color: var(--azul-principal);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.12);
+  outline: none;
+}
+ 
+.btn-primary-custom {
+  background-color: var(--azul-principal);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.15s;
+}
+ 
+.btn-primary-custom:hover {
+  background-color: var(--azul-oscuro);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+ 
+/* ---------- FOOTER ---------- */
+.footer-custom {
+  background-color: var(--azul-principal);
+}
+ 
+.footer-custom a:hover {
+  color: var(--naranja) !important;
+  text-decoration: underline !important;
+}
+ 
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 260px;
+  }
+ 
+  .carousel-caption {
+    padding: 12px 16px;
+    bottom: 20px;
+  }
+ 
+  .carousel-caption h2 {
+    font-size: 1.2rem;
+  }
+ 
+  .carousel-caption p {
+    font-size: 0.875rem;
+  }
+}

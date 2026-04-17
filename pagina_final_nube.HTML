@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ImpulsoDigital – Herramientas y estrategias digitales para emprendedores en crecimiento.">
+  <meta name="author" content="Jesus Razo Rosas">
+
+  <!-- Open Graph (vista previa al compartir en redes) -->
+  <meta property="og:title" content="ImpulsoDigital">
+  <meta property="og:description" content="Herramientas digitales para hacer crecer tu negocio.">
+  <meta property="og:type" content="website">
+
+  <title>ImpulsoDigital – Plataforma para Emprendedores</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo_final_pagina__nube.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="img/Gemini_Generated_Image_d5r1a7d5r1a7d5r1.png" alt="Logo ImpulsoDigital" width="42" height="42" style="object-fit:contain;">
+        ImpulsoDigital
+      </a>
+
+      <button class="navbar-toggler border-0" type="button"
+        data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#emprendedores">Emprendedores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn-contacto px-3 ms-2" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- CARRUSEL -->
+  <section id="inicio">
+    <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-label="Diapositiva 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+            class="d-block w-100 carousel-img" alt="Equipo trabajando en emprendimiento digital">
+          <div class="carousel-caption">
+            <h2>Impulsa tu emprendimiento</h2>
+            <p>Herramientas digitales para hacer crecer tu negocio.</p>
+            <a href="#servicios" class="btn btn-naranja mt-2">Ver servicios</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+            class="d-block w-100 carousel-img" alt="Estrategia de marketing digital">
+          <div class="carousel-caption">
+            <h2>Marketing Digital</h2>
+            <p>Estrategias para mejorar la presencia de tu marca en línea.</p>
+            <a href="#contacto" class="btn btn-naranja mt-2">Contáctanos</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+            class="d-block w-100 carousel-img" alt="Trabajo en equipo e innovación">
+          <div class="carousel-caption">
+            <h2>Innovación y crecimiento</h2>
+            <p>La tecnología impulsa a los emprendedores hacia el éxito.</p>
+            <a href="#emprendedores" class="btn btn-naranja mt-2">Conoce más</a>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- EMPRENDEDORES -->
+  <section id="emprendedores" class="py-5 bg-light">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Para Emprendedores</h2>
+        <p class="text-muted col-md-7 mx-auto">Sabemos que iniciar un negocio es un reto. Por eso creamos recursos y herramientas que te acompañan en cada etapa de tu emprendimiento.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-4">
+            <div class="icono-card mx-auto mb-3">
+              <i class="bi bi-lightbulb-fill"></i>
+            </div>
+            <h5 class="fw-bold">Idea y validación</h5>
+            <p class="text-muted">Aprende a validar tu idea de negocio antes de invertir tiempo y dinero.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-4">
+            <div class="icono-card mx-auto mb-3">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h5 class="fw-bold">Crecimiento digital</h5>
+            <p class="text-muted">Estrategias probadas para escalar tu negocio usando herramientas digitales.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-4">
+            <div class="icono-card mx-auto mb-3">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h5 class="fw-bold">Comunidad</h5>
+            <p class="text-muted">Conecta con otros emprendedores, comparte experiencias y crece juntos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-5">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nuestros Servicios</h2>
+        <p class="text-muted col-md-7 mx-auto">Ofrecemos soluciones integrales para que tu negocio destaque en el mundo digital.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-servicio text-center p-4 h-100">
+            <i class="bi bi-globe2 fs-2 text-naranja mb-3 d-block"></i>
+            <h6 class="fw-bold">Diseño Web</h6>
+            <p class="text-muted small">Sitios modernos, rápidos y optimizados para todos los dispositivos.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-servicio text-center p-4 h-100">
+            <i class="bi bi-megaphone-fill fs-2 text-naranja mb-3 d-block"></i>
+            <h6 class="fw-bold">Marketing Digital</h6>
+            <p class="text-muted small">Campañas en redes sociales y publicidad online con resultados medibles.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-servicio text-center p-4 h-100">
+            <i class="bi bi-search fs-2 text-naranja mb-3 d-block"></i>
+            <h6 class="fw-bold">SEO y Posicionamiento</h6>
+            <p class="text-muted small">Mejora tu visibilidad en buscadores y atrae clientes orgánicamente.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-servicio text-center p-4 h-100">
+            <i class="bi bi-bar-chart-fill fs-2 text-naranja mb-3 d-block"></i>
+            <h6 class="fw-bold">Análisis y Datos</h6>
+            <p class="text-muted small">Toma decisiones basadas en datos reales sobre tu negocio.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Contáctanos</h2>
+        <p class="text-muted">¿Tienes alguna pregunta o proyecto en mente? Escríbenos.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-6">
+
+          <div class="card border-0 shadow-sm p-4">
+            <form action="https://formspree.io/f/mbdpqwvk" method="POST">
+
+              <!-- Nombre -->
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre completo" required>
+              </div>
+
+              <!-- Correo -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="correo@ejemplo.com" required>
+              </div>
+
+              <!-- Mensaje -->
+              <div class="mb-3">
+                <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                <textarea id="mensaje" name="message" class="form-control" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+              </div>
+
+              <!-- Anti-spam (oculto) -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+              <!-- Botón -->
+              <div class="d-grid mt-2">
+                <button type="submit" class="btn btn-primary-custom">
+                  <i class="bi bi-send me-2"></i>Enviar mensaje
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer-custom text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">ImpulsoDigital</p>
+      <p class="mb-2 small opacity-75">Herramientas digitales para emprendedores</p>
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <a href="#inicio" class="text-white-50 small text-decoration-none">Inicio</a>
+        <a href="#emprendedores" class="text-white-50 small text-decoration-none">Emprendedores</a>
+        <a href="#servicios" class="text-white-50 small text-decoration-none">Servicios</a>
+        <a href="#contacto" class="text-white-50 small text-decoration-none">Contacto</a>
+      </div>
+      <hr class="border-secondary opacity-25">
+      <p class="mb-0 small opacity-50">© 2026 ImpulsoDigital – Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
